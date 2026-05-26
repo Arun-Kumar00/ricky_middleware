@@ -34,7 +34,7 @@ public class Msg91Service {
         innerPayload.put("type", "template");
 
         Map<String, Object> template = new HashMap<>();
-        template.put("name", "coversquote");
+        template.put("name", "coverwithimage");
 
         Map<String, String> language = new HashMap<>();
         language.put("code", "en");
