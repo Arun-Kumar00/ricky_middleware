@@ -34,7 +34,7 @@ public class Msg91Service {
         innerPayload.put("type", "template");
 
         Map<String, Object> template = new HashMap<>();
-        template.put("name", "coverwithimage");
+        template.put("name", "coverwithoutheader");
 
         Map<String, String> language = new HashMap<>();
         language.put("code", "en");
@@ -47,13 +47,13 @@ public class Msg91Service {
         Map<String, Object> toAndComponentsItem = new HashMap<>();
         toAndComponentsItem.put("to", Collections.singletonList(callRequest.getPhoneNumber()));
 
-        Map<String, Object> components = new HashMap<>();
+        // Map<String, Object> components = new HashMap<>();
         Map<String, String> header1 = new HashMap<>();
         header1.put("type", "image");
         header1.put("value", bannerUrl);
-        components.put("header_1", header1);
+        // components.put("header_1", header1);
 
-        toAndComponentsItem.put("components", components);
+        // toAndComponentsItem.put("components", components);
         template.put("to_and_components", Collections.singletonList(toAndComponentsItem));
 
         innerPayload.put("template", template);

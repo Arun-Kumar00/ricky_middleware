@@ -3,6 +3,7 @@ package com.arunnitd.middleware.mw;
 public class CallRequest {
     private String phoneNumber;
     private int userTap; // Expecting 1 or 2
+    // private String TemplateName;
 
     // Getters and Setters
     public String getPhoneNumber() {
@@ -20,4 +21,12 @@ public class CallRequest {
     public void setUserTap(int userTap) {
         this.userTap = userTap;
     }
+
+    // public String getTemplateName() {
+    // return TemplateName;
+    // }
+
+    // public void setTemplateName(String TemplateName) {
+    // this.TemplateName = TemplateName;
+    // }
 }
