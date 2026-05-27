@@ -2,8 +2,8 @@ package com.arunnitd.middleware.mw;
 
 public class CallRequest {
     private String phoneNumber;
-    private int userTap; // Expecting 1 or 2
-    // private String TemplateName;
+    private int userTap;
+    private String templateName; // Changed to standard camelCase
 
     // Getters and Setters
     public String getPhoneNumber() {
@@ -22,11 +22,11 @@ public class CallRequest {
         this.userTap = userTap;
     }
 
-    // public String getTemplateName() {
-    // return TemplateName;
-    // }
+    public String getTemplateName() {
+        return templateName;
+    }
 
-    // public void setTemplateName(String TemplateName) {
-    // this.TemplateName = TemplateName;
-    // }
+    public void setTemplateName(String templateName) {
+        this.templateName = templateName;
+    }
 }
