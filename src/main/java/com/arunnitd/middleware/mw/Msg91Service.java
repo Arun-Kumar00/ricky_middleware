@@ -19,10 +19,9 @@ public class Msg91Service {
 
     public String processAndSendMessage(CallRequest callRequest) {
 
-        // 1. Determine banner logic based on user tap (1 or 2)
-        String bannerUrl = callRequest.getUserTap() == 1
-                ? "https://picsum.photos/800/400.jpg"
-                : "https://placehold.co/600x400/png";
+        String bannerUrl = callRequest.getTemplateName() == "rider50"
+                ? "https://files.msg91.com/479629/xmyclfjz"
+                : "https://files.msg91.com/479629/ymddnsjn";
 
         // 2. Build the nested "2D" JSON structure exactly as required
         Map<String, Object> payload = new HashMap<>();
@@ -51,6 +50,7 @@ public class Msg91Service {
         Map<String, String> header1 = new HashMap<>();
         header1.put("type", "image");
         header1.put("value", bannerUrl);
+        components.put("header_1", header1);
 
         toAndComponentsItem.put("components", components);
         template.put("to_and_components", Collections.singletonList(toAndComponentsItem));
