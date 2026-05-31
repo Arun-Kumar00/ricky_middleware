@@ -21,8 +21,8 @@ public class Msg91Service {
 
         // The fix:
         String bannerUrl = "rider50".equals(callRequest.getTemplateName())
-                ? "https://files.msg91.com/479629/xmyclfjz"
-                : "https://files.msg91.com/479629/ymddnsjn";
+                ? "https://files.msg91.com/479629/ymddnsjn"
+                : "https://files.msg91.com/479629/xmyclfjz";
 
         // 2. Build the nested "2D" JSON structure exactly as required
         Map<String, Object> payload = new HashMap<>();
