@@ -19,7 +19,8 @@ public class Msg91Service {
 
     public String processAndSendMessage(CallRequest callRequest) {
 
-        String bannerUrl = callRequest.getTemplateName() == "rider50"
+        // The fix:
+        String bannerUrl = "rider50".equals(callRequest.getTemplateName())
                 ? "https://files.msg91.com/479629/xmyclfjz"
                 : "https://files.msg91.com/479629/ymddnsjn";
 
