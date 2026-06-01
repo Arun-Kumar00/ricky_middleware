@@ -23,6 +23,7 @@ public class Msg91Service {
         String bannerUrl = switch (callRequest.getTemplateName()) {
             case "rider50" -> "https://files.msg91.com/479629/ymddnsjn";
             case "internshipwithimage" -> "https://files.msg91.com/479629/jmzhevhu";
+            case "internshipwithimganddesc" -> "https://files.msg91.com/479629/jmzhevhu";
             default -> "https://files.msg91.com/479629/xmyclfjz";
         };
 
